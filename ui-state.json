@@ -1,0 +1,317 @@
+{
+  "devices": {
+    "mobile": {
+      "scrollSettings": {
+        "type": "smooth",
+        "speed": 100,
+        "easing": "default",
+        "duration": 1200,
+        "isInfinite": false
+      },
+      "canvases": {
+        "i242": { "cameraId": "cd7f4f8e-7894-4fc5-85c0-3ebf8aef7435" },
+        "iti9": {}
+      }
+    },
+    "tablet": {
+      "scrollSettings": {
+        "type": "smooth",
+        "speed": 100,
+        "easing": "default",
+        "duration": 1200,
+        "isInfinite": false
+      },
+      "canvases": { "iti9": {} }
+    },
+    "desktop": {
+      "scrollSettings": {
+        "type": "smooth",
+        "speed": 100,
+        "easing": "default",
+        "duration": 1200,
+        "isInfinite": false
+      },
+      "canvases": {
+        "iti9": { "sceneId": "2e9abea3-55c0-4563-9baa-8deeab210e58" }
+      }
+    }
+  },
+  "sections": {
+    "iy92-2": { "name": "1", "offsetY": 0, "hash": "1" },
+    "ielp-2-2-3-2": { "name": "services", "offsetY": 0, "hash": "services" },
+    "iy92-2-3-2-4": { "name": "4", "offsetY": 0, "hash": "4" },
+    "ielp-2-2-3-2-2": { "name": "pricing", "offsetY": 0, "hash": "pricing" },
+    "iy92-2-3-2-4-3": { "name": "2", "offsetY": 0, "hash": "2" },
+    "ielp-2-2-2-2-2-2": { "name": "cta", "offsetY": 0, "hash": "cta" },
+    "iy92-2-3-2-4-2-2": { "name": "3", "offsetY": 0, "hash": "3" },
+    "iy92-2-3-2-4-3-2": { "name": "6", "offsetY": 0, "hash": "6" },
+    "iy92-2-3-2-4-2-2-2": { "name": "5", "offsetY": 0, "hash": "5" }
+  },
+  "links": {
+    "i1wdeg": {
+      "url": "https://docs.honeyai.cloud/",
+      "type": "external",
+      "newTab": true
+    },
+    "i3cnxi": {
+      "url": "https://www.dextools.io/app/en/ether/pair-explorer/0xcomingsoon",
+      "type": "external",
+      "newTab": true
+    },
+    "if4q2x": {
+      "url": "https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0xcomingsoon",
+      "type": "external",
+      "newTab": true
+    },
+    "ig1sdj": {
+      "url": "https://t.me/GPUXAI_eth",
+      "type": "external",
+      "newTab": true
+    },
+    "ioch8n": {
+      "url": "https://t.me/GPUXAI_eth",
+      "type": "external",
+      "newTab": true
+    },
+    "iumc9k": {
+      "url": "https://medium.com/@GPUX AI",
+      "type": "external",
+      "newTab": true
+    },
+    "iur22y": {
+      "url": "https://partner.gpuai.me/",
+      "type": "external",
+      "newTab": true
+    },
+    "i8mgp3-4": {
+      "url": "www.linkedin.com/in/adam-lewis-8a364245",
+      "type": "external",
+      "newTab": true
+    },
+    "ibty0f-2": {
+      "url": "https://dapp.gpuai.me/",
+      "type": "external",
+      "newTab": true
+    },
+    "i1u33-2-3": {
+      "type": "internal",
+      "pageId": "fc32cfd2-9e72-481c-a295-e55f4fa7d9eb",
+      "sectionId": "ielp-2-2-3-2",
+      "smoothScroll": true,
+      "pagePath": "/",
+      "sectionHash": "services"
+    },
+    "i1u33-2-4": {
+      "url": "https://app.honeyai.cloud/",
+      "type": "external",
+      "newTab": true
+    },
+    "i8mgp3-4-3": {
+      "url": "https://www.linkedin.com/in/md-sohel-bepari-268310259/",
+      "type": "external",
+      "newTab": true
+    },
+    "ibty0f-2-3": {
+      "url": "https://dapp.gpuai.me/",
+      "type": "external",
+      "newTab": true
+    },
+    "i1u33-2-2-2": {
+      "url": "https://app.honeyai.cloud/",
+      "type": "external",
+      "newTab": true
+    },
+    "i1u33-2-3-2": {
+      "type": "internal",
+      "pageId": "fc32cfd2-9e72-481c-a295-e55f4fa7d9eb",
+      "sectionId": "ielp-2-2-3-2-2",
+      "smoothScroll": true,
+      "pagePath": "/",
+      "sectionHash": "pricing"
+    },
+    "i2nth-2-2-2": {
+      "url": "https://dapp.gpuai.me/",
+      "type": "external",
+      "newTab": true
+    },
+    "i7nl-4-2-4-2": {
+      "url": "https://medium.com/@GPUX AI",
+      "type": "external",
+      "newTab": true
+    },
+    "ibty0f-2-2-2": {
+      "url": "https://dapp.gpuai.me/",
+      "type": "external",
+      "newTab": true
+    },
+    "i1u33-2-3-2-2": {
+      "type": "internal",
+      "newTab": false,
+      "pageId": "fc32cfd2-9e72-481c-a295-e55f4fa7d9eb",
+      "sectionId": "ielp-2-2-2-2-2-2",
+      "smoothScroll": true,
+      "pagePath": "/",
+      "sectionHash": "cta"
+    },
+    "i7nl-4-2-4-2-3": {
+      "url": "https://partner.gpuai.me/",
+      "type": "external",
+      "newTab": true
+    },
+    "i7nl-4-2-4-2-4": {
+      "url": "https://t.me/GPUXAI_eth",
+      "type": "external",
+      "newTab": true
+    },
+    "iosqkh-2-3-2-3-2-2": {
+      "url": "https://docs.honeyai.cloud",
+      "type": "external",
+      "newTab": true
+    },
+    "ion1x-5-2-8-2-3-2-2-2-2-2": {
+      "url": "https://x.com/GPUXAI_eth",
+      "type": "external",
+      "newTab": true
+    },
+    "igxb-4-2-2-3-2-2-2-2-3-3-3-2-2": { "type": "external" }
+  },
+  "scrollAnimations": {
+    "ib9q-2-2": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "fade",
+      "effectB": "fade",
+      "sectionId": "iy92-2-3-2-4-3-2",
+      "clickThrough": false
+    },
+    "i9x7-2-2-2-2": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "custom",
+      "effectB": "fade",
+      "sectionId": "iy92-2",
+      "clickThrough": false
+    },
+    "iosqkh-2-3-2-3": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "custom",
+      "effectB": "fade",
+      "sectionId": "iy92-2",
+      "clickThrough": false
+    },
+    "iosqkh-2-2-2-2-2": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "custom",
+      "effectB": "fade",
+      "sectionId": "iy92-2",
+      "clickThrough": false
+    },
+    "iosqkh-2-3-2-3-2": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "custom",
+      "effectB": "fade",
+      "sectionId": "iy92",
+      "clickThrough": false
+    },
+    "iosqkh-2-3-3-2-2": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": {
+        "keyframe": { "opacity": 0 },
+        "transition": { "type": "easeOut", "duration": 500 }
+      },
+      "effectB": "fade",
+      "sectionId": "iy92-2-3-2-4",
+      "clickThrough": false
+    },
+    "iosqkh-2-2-2-2-2-2": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "custom",
+      "effectB": "fade",
+      "sectionId": "iy92-2-3-2-4-3-2",
+      "clickThrough": false
+    },
+    "iosqkh-2-3-2-3-2-2": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "custom",
+      "effectB": "fade",
+      "sectionId": "iy92",
+      "clickThrough": false
+    },
+    "iosqkh-2-3-2-3-2-3": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "custom",
+      "effectB": "fade",
+      "sectionId": "iy92",
+      "clickThrough": false
+    },
+    "iosqkh-2-3-3-2-2-3": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": {
+        "keyframe": { "opacity": 0 },
+        "transition": { "type": "easeOut", "duration": 500 }
+      },
+      "effectB": "fade",
+      "sectionId": "iy92-2-3-2-4-3",
+      "clickThrough": false
+    },
+    "iosqkh-2-2-2-2-2-2-2": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "custom",
+      "effectB": "fade",
+      "sectionId": "iy92",
+      "clickThrough": false
+    },
+    "iosqkh-2-3-2-3-2-4-2": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "custom",
+      "effectB": "fade",
+      "sectionId": "iy92",
+      "clickThrough": false
+    },
+    "iosqkh-2-3-3-2-2-2-2": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": {
+        "keyframe": { "opacity": 0 },
+        "transition": { "type": "easeOut", "duration": 500 }
+      },
+      "effectB": "fade",
+      "sectionId": "iy92-2-3-2-4-2-2",
+      "clickThrough": false
+    },
+    "iosqkh-2-3-3-2-2-2-2-2": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "fade",
+      "effectB": "fade",
+      "sectionId": "iy92-2-3-2-4-2-2-2",
+      "clickThrough": false
+    },
+    "i0op89-3-2-2-2-2-2-2-2-2": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "custom",
+      "effectB": "fade",
+      "sectionId": "iy92-2",
+      "clickThrough": false
+    },
+    "i0op89-3-2-2-2-2-2-2-2-2-3": {
+      "type": "section",
+      "start": "bottom",
+      "effectA": "custom",
+      "effectB": "fade",
+      "sectionId": "iy92-2-3-2-4-3-2",
+      "clickThrough": false
+    }
+  }
+}

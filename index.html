@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GPUX AI : High Performance GPU Rentals</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="WE'RE A GPU COMPUTE PLATFORM" />
+    <meta property="og:title" content="GPUX AI : High Performance GPU Rentals" />
+    <meta property="og:description" content="WE'RE A GPU COMPUTE PLATFORM" />
+    <meta property="og:image" content="/scree.jpg" />
+    <meta property="og:url" content="https://gpuai.me/" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/logo.png" />
+    <link href="/website-base.css" rel="stylesheet" />
+    <link href="/styles.css" rel="stylesheet" />
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      window._pwInitialPath = "/";
+    </script>
+    <script defer="defer" fetchpriority="high" src="/script.js"></script>
+
+    <link
+      rel="preload"
+      href="/scene-state/2e9abea3-55c0-4563-9baa-8deeab210e58.json"
+      as="fetch"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://pwb-uploads-staging.s3.amazonaws.com/website/30d9379b-c22f-4473-b471-cc6107a61d4b/4bad5918ed494deaa0d1a2f7074acf48_opt-(2).glb"
+      as="fetch"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://pwb-uploads-staging.s3.amazonaws.com/website/dd20cb4f-92b1-43e9-b858-6265e6e8703b/button4_slim-(1).glb"
+      as="fetch"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/b9b17eea-10bb-427c-9214-3d259195c793/vr_art_gallery.glb"
+      as="fetch"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/2c0dbc84-aacc-429a-a36f-f45a4b784920/virtual_stage_floating_hexes.glb"
+      as="fetch"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/1e588d69-f97f-4971-b4bc-9850a4076f34/PlatformBase1.glb"
+      as="fetch"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/ec529e25-8574-4935-9909-12c3a32fecc3/NeonLight2.glb"
+      as="fetch"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/001e87c3-87a9-4fdf-a181-a1c911d38ef6/Particle.glb"
+      as="fetch"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/449bc609-ba92-4284-bd30-60d34447a0aa/studio_small_04_1k.exr"
+      as="image"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/abb2dc49-b032-4bab-808a-2b4be19b2974/ghost_in_the_shell.glb"
+      as="fetch"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/8544c9a8-6cda-492e-84be-5daa69659a73/Frame-427321734.jpg"
+      as="image"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/f83761e1-0b17-423e-bf5e-2ca1d2bf0742/Frame-427321719.jpg"
+      as="image"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/0dd5ac27-6af1-4310-87b9-9ada8c01f67f/Bento-Card-Vol-37E.jpg"
+      as="image"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/a4d25275-1d9d-4e1c-a427-7360a6a746f1/Frame-427321721.jpg"
+      as="image"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/a509bc2a-29c6-4704-8487-5268ffe13c08/Frame-427321730.jpg"
+      as="image"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/b373966d-badf-42ea-b723-9d66a696e946/Frame-427321731.jpg"
+      as="image"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://files.peachworlds.com/website/b1d834b7-3672-46f0-b754-297a01accf35/Frame-427321732.jpg"
+      as="image"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/ui-state.json"
+      as="fetch"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      html,
+      body,
+      [data-gjs-type="wrapper"] {
+        height: 100%;
+      }
+      * {
+        scrollbar-width: none;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      .pwb-scene > canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        user-select: none;
+        pointer-events: none;
+      }
+      #pwb-loading-wrap {
+        display: block;
+        background-color: #000000;
+      }
+      #pwb-loading-page-logo {
+        width: 100%;
+        bottom: 0;
+        display: block;
+        padding: 0 12px 12px 12px;
+        z-index: 1000;
+        position: fixed;
+        object-fit: scale-down;
+      }
+      #i52xq5-2 {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        bottom: 0px;
+        height: 100%;
+        display: block;
+        opacity: 1;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+      }
+      #ixxi9v {
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+      #i52xq5 {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        bottom: 0px;
+        height: 100dvh;
+        display: block;
+        position: fixed;
+        align-items: center;
+        padding-bottom: 5dvh;
+        justify-content: center;
+      }
+      #i84s4f {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding-bottom: px;
+        justify-content: center;
+      }
+      #izmlqn {
+        color: #ff952b;
+        display: block;
+        position: absolute;
+        font-size: 18px;
+        text-align: center;
+        font-family: Inter;
+        font-weight: bold;
+      }
+      #i52xq5-3 {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        bottom: 0px;
+        height: 100dvh;
+        display: none;
+        position: fixed;
+        align-items: center;
+        padding-bottom: 5dvh;
+        justify-content: center;
+      }
+      #i84s4f-2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding-bottom: px;
+        justify-content: center;
+      }
+      #izmlqn-2 {
+        color: #ff952b;
+        display: block;
+        position: absolute;
+        font-size: 18px;
+        text-align: center;
+        font-family: Inter;
+        font-weight: bold;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/d61ac281-a89b-4866-b717-53c05db0527b/Syne-Bold.ttf");
+        font-family: Syne-Bold;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/b15c3292-f971-4b5c-8216-a654dc8c0587/Syne-Regular.ttf");
+        font-family: Syne-Regular;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/828d76d0-6f9c-4b35-a0e5-6943533a9d7f/Syne-SemiBold.ttf");
+        font-family: Syne-SemiBold;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/6ecc2351-9b42-4465-9292-c8da32750d05/Syne-ExtraBold.ttf");
+        font-family: Syne-ExtraBold;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/b0b7534e-73a9-4021-a45d-e73fec09ee44/Syne-Medium.ttf");
+        font-family: Syne-Medium;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/d61ac281-a89b-4866-b717-53c05db0527b/Syne-Bold.ttf");
+        font-family: Syne-Bold;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/b15c3292-f971-4b5c-8216-a654dc8c0587/Syne-Regular.ttf");
+        font-family: Syne-Regular;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/6ecc2351-9b42-4465-9292-c8da32750d05/Syne-ExtraBold.ttf");
+        font-family: Syne-ExtraBold;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/d61ac281-a89b-4866-b717-53c05db0527b/Syne-Bold.ttf");
+        font-family: Syne-Bold;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/261780f2-0c45-4b94-a033-e7152879c516/Necosmic-Display.otf");
+        font-family: Necosmic-Display;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/7adac445-a845-402c-a035-7d5208f4259b/Manrope-VariableFont_wght.ttf");
+        font-family: Manrope-VariableFont_wght;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/5c71a11e-eff2-460b-8d0d-dca35e15624c/Manrope-Regular.ttf");
+        font-family: Manrope-Regular;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/3940e405-7991-4495-b426-5fed5d9f45c7/Manrope-Medium.ttf");
+        font-family: Manrope-Medium;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/c54bb80f-17fe-444a-8cb2-ed941f387075/Manrope-SemiBold.ttf");
+        font-family: Manrope-SemiBold;
+      }
+      @font-face {
+        src: url("https://files.peachworlds.com/website/125612d3-d39b-44d4-97a2-87c68ec978ec/Manrope-Light.ttf");
+        font-family: Manrope-Light;
+      }
+      @media (max-width: 992px) {
+        #i52xq5-2 {
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          width: 100%;
+          bottom: 0px;
+          height: 100dvh;
+          display: block;
+          opacity: 1;
+          position: fixed;
+          align-items: center;
+          justify-content: center;
+        }
+        #ixxi9v {
+          width: 100%;
+          height: 100%;
+          max-width: 100%;
+          min-width: 100%;
+          max-height: 100%;
+          min-height: 100%;
+          object-fit: cover;
+        }
+        #i52xq5 {
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          width: 100%;
+          bottom: 0px;
+          height: 100dvh;
+          display: block;
+          position: fixed;
+          align-items: center;
+          padding-bottom: 5dvh;
+          justify-content: center;
+        }
+        #i84s4f {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          position: relative;
+          align-items: center;
+          padding-bottom: px;
+          justify-content: center;
+        }
+        #izmlqn {
+          color: #ff952b;
+          display: block;
+          position: absolute;
+          font-size: 18px;
+          text-align: center;
+          font-family: Inter;
+          font-weight: bold;
+        }
+        #i52xq5-3 {
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          width: 100%;
+          bottom: 0px;
+          height: 100dvh;
+          display: none;
+          position: fixed;
+          align-items: center;
+          padding-bottom: 5dvh;
+          justify-content: center;
+        }
+        #i84s4f-2 {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          position: relative;
+          align-items: center;
+          padding-bottom: px;
+          justify-content: center;
+        }
+        #izmlqn-2 {
+          color: #ff952b;
+          display: block;
+          position: absolute;
+          font-size: 18px;
+          text-align: center;
+          font-family: Inter;
+          font-weight: bold;
+        }
+      }
+      @media (max-width: 480px) {
+        #i52xq5-2 {
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          width: 100%;
+          bottom: 0px;
+          height: 100dvh;
+          display: block;
+          opacity: 1;
+          position: fixed;
+          align-items: center;
+          justify-content: center;
+        }
+        #ixxi9v {
+          width: 100%;
+          height: 100%;
+          max-width: 100%;
+          min-width: 100%;
+          max-height: 100%;
+          min-height: 100%;
+          object-fit: cover;
+        }
+        #i52xq5 {
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          width: 100%;
+          bottom: 0px;
+          height: 100dvh;
+          display: block;
+          position: fixed;
+          align-items: center;
+          padding-bottom: 5dvh;
+          justify-content: center;
+        }
+        #i84s4f {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          position: relative;
+          align-items: center;
+          padding-bottom: px;
+          justify-content: center;
+        }
+        #izmlqn {
+          color: #ff952b;
+          display: block;
+          position: absolute;
+          font-size: 18px;
+          text-align: center;
+          font-family: Inter;
+          font-weight: bold;
+        }
+        #i52xq5-3 {
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          width: 100%;
+          bottom: 0px;
+          height: 100dvh;
+          display: none;
+          position: fixed;
+          align-items: center;
+          padding-bottom: 5dvh;
+          justify-content: center;
+        }
+        #i84s4f-2 {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          position: relative;
+          align-items: center;
+          padding-bottom: px;
+          justify-content: center;
+        }
+        #izmlqn-2 {
+          color: #ff952b;
+          display: block;
+          position: absolute;
+          font-size: 18px;
+          text-align: center;
+          font-family: Inter;
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+  <body id="i23o">
+    <div id="pwb-body-wrap">
+      <div id="ieao" class="pwb-background pwb-flex-grid-wrap">
+        <div id="iti9" class="pwb-scene"></div>
+      </div>
+      <div id="ipj4" class="pwb-block pwb-flex-grid-wrap">
+        <div id="ib9q" class="pwb-block pwb-flex-grid-wrap">
+          <img
+            src="/logo.png"
+            loading="lazy"
+            id="in2cka"
+          />
+        </div>
+      </div>
+      <div id="inx0x5" class="pwb-flex-grid-wrap">
+        <div id="ipj4-2" class="pwb-block pwb-flex-grid-wrap">
+          <div id="ib9q-2" class="pwb-block pwb-flex-grid-wrap">
+            <div id="i9x7-2-2-2-2" class="pwb-block pwb-flex-grid-wrap">
+              <div id="iosqkh-2-3-2-3" class="pwb-block pwb-flex-grid-wrap">
+                <img
+                  src="https://files.peachworlds.com/website/25b3c62a-1c5e-4928-b069-c098b4762de0/Union.svg"
+                  loading="lazy"
+                  id="i964g-3"
+                />
+                <div id="igxb-4-2-2-3-2-2-2-2-3-3-3" class="pwb-text">
+                  Run AI Workloads at Cloud Scale — Without the Cloud Cost<br
+                    id="ii3me-2-2"
+                  />
+                </div>
+              </div>
+              <div id="iosqkh-2-2-2-2-2" class="pwb-block pwb-flex-grid-wrap">
+                <div
+                  id="i0op89-3-2-2-2-2-2-2-3"
+                  class="pwb-block pwb-flex-grid-wrap"
+                >
+                  <div id="igxb-4-2-2-3-2-2-2-2-3-4" class="pwb-text">
+                    GPUX AI connects idle GPUs worldwide to help AI teams train
+                    models,
+                  </div>
+                  <div id="igimd-2-2" class="pwb-flex-grid-wrap">
+                    <div id="igimd-3" class="pwb-flex-grid-wrap"></div>
+                    <div id="igxb-4-2-2-3-2-2-2-2-3-2-2" class="pwb-text">
+                     CA: 0xcomingsoon
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="i0op89-3-2-2-2-2-2-2-2-2"
+                class="pwb-block pwb-flex-grid-wrap"
+              >
+                <div id="ibty0f-2" class="pwb-flex-grid-wrap">
+                  <img
+                    src="https://files.peachworlds.com/website/aea64b57-b50b-4fe6-b995-b22f10d0df84/button.svg"
+                    loading="lazy"
+                    id="i2nth-2"
+                  />
+                  <div id="i1u33-2"><b id="iohfl">Buy $GPUX</b></div>
+                  <img
+                    src="https://files.peachworlds.com/website/fbfff170-b48d-45b1-9b99-170bcb947164/arrow-topright.svg"
+                    loading="lazy"
+                    id="ib70qp-2"
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="iy92-2" class="pwb-block pwb-flex-grid-wrap"></div>
+          </div>
+        </div>
+        <div id="ib9q-2-3-2-4-3" class="pwb-block pwb-flex-grid-wrap">
+          <div id="i9x7-2-2-3-3-3" class="pwb-block pwb-flex-grid-wrap">
+            <div id="iosqkh-2-3-3-2-2-3" class="pwb-block pwb-flex-grid-wrap">
+              <div
+                id="i0op89-4-2-2-2-2-2-2-3"
+                class="pwb-block pwb-flex-grid-wrap"
+              >
+                <div
+                  id="iosqkh-2-3-2-2-2-3-2"
+                  class="pwb-block pwb-flex-grid-wrap"
+                >
+                  <div id="igxb-4-2-2-3-2-2-2-2-3-3-2-2-3-2" class="pwb-text">
+                    PERFORMANCE YOU CAN TRUST
+                  </div>
+                </div>
+                <div id="igxb-3-2-2-2-2-2-2-2-2-4" class="pwb-text">
+                  Maximize Your AI Processing<br id="i8en8l-3" />
+                </div>
+                <div id="igxb-3-2-2-2-2-2-2-2-2-3-2" class="pwb-text">
+                  GPUX AI empowers AI teams to scale instantly — without hardware
+                  lock-in or cloud complexity.<br id="iwiiz" />Tap into 100,000+
+                  distributed GPUs, pay-per-task with tokens, and earn rewards
+                  by contributing idle compute.<br id="iv11k" />It’s
+                  infrastructure made for AI innovation.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="iy92-2-3-2-4-3" class="pwb-block pwb-flex-grid-wrap"></div>
+        </div>
+        <div id="ib9q-2-3-2-4-2-2" class="pwb-block pwb-flex-grid-wrap">
+          <div id="i9x7-2-2-3-3-2-2" class="pwb-block pwb-flex-grid-wrap">
+            <div id="iosqkh-2-3-3-2-2-2-2" class="pwb-block pwb-flex-grid-wrap">
+              <div
+                id="i0op89-4-2-2-2-2-2-2-2-2"
+                class="pwb-block pwb-flex-grid-wrap"
+              >
+                <div
+                  id="iosqkh-2-3-2-2-2-3"
+                  class="pwb-block pwb-flex-grid-wrap"
+                >
+                  <div id="igxb-4-2-2-3-2-2-2-2-3-3-2-2-3" class="pwb-text">
+                    ADVANTAGES OF GPU NETWORKS
+                  </div>
+                </div>
+                <div id="igxb-3-2-2-2-2-2-2-2-2" class="pwb-text">
+                  Built for AI Builders. Tuned for Speed.<br id="ir7kk" />
+                </div>
+                <div id="igxb-3-2-2-2-2-2-2-2-2-3" class="pwb-text">
+                  GPUX AI gives you on-demand access to decentralized GPU clusters
+                  optimized for:<br id="ir77m" />Deep learning model training<br
+                    id="inmbq"
+                  />Edge inference and generative AI<br id="i8ict" />Token-based
+                  compute that scales with you
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="iy92-2-3-2-4-2-2" class="pwb-block pwb-flex-grid-wrap"></div>
+        </div>
+        <div id="ib9q-2-3-2-4" class="pwb-block pwb-flex-grid-wrap">
+          <div id="i9x7-2-2-3-3" class="pwb-block pwb-flex-grid-wrap">
+            <div id="iosqkh-2-3-3-2-2" class="pwb-block pwb-flex-grid-wrap">
+              <div
+                id="i0op89-4-2-2-2-2-2-2"
+                class="pwb-block pwb-flex-grid-wrap"
+              >
+                <div id="iosqkh-2-3-2-2-2" class="pwb-block pwb-flex-grid-wrap">
+                  <div id="igxb-4-2-2-3-2-2-2-2-3-3-2-2" class="pwb-text">
+                    BENEFITS
+                  </div>
+                </div>
+                <div id="igxb-3-2-2-2-2-2-2" class="pwb-text">
+                  Key Compute Metrics
+                </div>
+                <div
+                  id="iosqkh-2-3-2-2-2-2-3"
+                  class="pwb-block pwb-flex-grid-wrap"
+                >
+                  <div
+                    id="iosqkh-2-3-2-2-2-2"
+                    class="pwb-block pwb-flex-grid-wrap"
+                  >
+                    <div id="igxb-4-2-2-3-2-2-2-2-3-3-2-2-2" class="pwb-text">
+                      320+
+                    </div>
+                    <div id="igxb-4-2-2-3-2-2-2-2-3-3-2-2-2-3" class="pwb-text">
+                      Active GPU Nodes (and growing daily)
+                    </div>
+                  </div>
+                  <div
+                    id="iosqkh-2-3-2-2-2-2-2"
+                    class="pwb-block pwb-flex-grid-wrap"
+                  >
+                    <div id="igxb-4-2-2-3-2-2-2-2-3-3-2-2-2-2" class="pwb-text">
+                      97%
+                    </div>
+                    <div
+                      id="igxb-4-2-2-3-2-2-2-2-3-3-2-2-2-3-2"
+                      class="pwb-text"
+                    >
+                      Average GPU Utilization
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="iy92-2-3-2-4" class="pwb-block pwb-flex-grid-wrap"></div>
+        </div>
+        <div id="ib9q-2-3-2-4-2-2-2" class="pwb-block pwb-flex-grid-wrap">
+          <div id="i9x7-2-2-3-3-2-2-2" class="pwb-block pwb-flex-grid-wrap">
+            <div
+              id="iosqkh-2-3-3-2-2-2-2-2"
+              class="pwb-block pwb-flex-grid-wrap"
+            >
+              <div
+                id="i0op89-4-2-2-2-2-2-2-2-2-2"
+                class="pwb-block pwb-flex-grid-wrap"
+              >
+                <div
+                  id="iosqkh-2-3-2-2-2-3-2-2"
+                  class="pwb-block pwb-flex-grid-wrap"
+                >
+                  <div id="igxb-4-2-2-3-2-2-2-2-3-3-2-2-3-2-2" class="pwb-text">
+                    GPUX AI
+                  </div>
+                </div>
+                <div id="igxb-3-2-2-2-2-2-2-2-2-4-2" class="pwb-text">
+                  AUTOMATE YOUR AI COMPUTE<br id="idf9lq" />
+                </div>
+                <div id="igxb-3-2-2-2-2-2-2-2-2-3-2-2" class="pwb-text">
+                   AI-powered GPU networks optimize workloads, allocate
+                  resources efficiently, and enhance processing with real-time
+                  monitoring.<br id="ivfdsz" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="iy92-2-3-2-4-2-2-2"
+            class="pwb-block pwb-flex-grid-wrap"
+          ></div>
+        </div>
+        <div id="ib9q-2-3-2-4-3-2" class="pwb-block pwb-flex-grid-wrap">
+          <div id="ib9q-2-2" class="pwb-block pwb-flex-grid-wrap">
+            <div id="i9x7-2-2-2-2-2" class="pwb-block pwb-flex-grid-wrap">
+              <div id="iosqkh-2-3-2-3-2" class="pwb-block pwb-flex-grid-wrap">
+                <img
+                  src="https://files.peachworlds.com/website/25b3c62a-1c5e-4928-b069-c098b4762de0/Union.svg"
+                  loading="lazy"
+                  id="i964g-3-2"
+                />
+                <div id="igxb-4-2-2-3-2-2-2-2-3-3-3-2" class="pwb-text">
+                  ACCELERATE TODAY
+                </div>
+              </div>
+              <div id="iosqkh-2-2-2-2-2-2" class="pwb-block pwb-flex-grid-wrap">
+                <div
+                  id="i0op89-3-2-2-2-2-2-2-3-2"
+                  class="pwb-block pwb-flex-grid-wrap"
+                >
+                  <div id="igxb-4-2-2-3-2-2-2-2-3-4-2" class="pwb-text">
+                    GPUX AI: The Future of AI Computing
+                  </div>
+                  <div id="igimd-2-2-2" class="pwb-flex-grid-wrap">
+                    <div id="igimd-3-2" class="pwb-flex-grid-wrap"></div>
+                    <div id="igxb-4-2-2-3-2-2-2-2-3-2-2-2" class="pwb-text">
+                      We provide AI innovators with the most advanced GPU
+                      networks to power machine learning at scale.<br
+                        id="ivbox-2-2"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="i0op89-3-2-2-2-2-2-2-2-2-3"
+                class="pwb-block pwb-flex-grid-wrap"
+              >
+                <div id="ibty0f-2-3" class="pwb-flex-grid-wrap">
+                  <img
+                    src="https://files.peachworlds.com/website/aea64b57-b50b-4fe6-b995-b22f10d0df84/button.svg"
+                    loading="lazy"
+                    id="i2nth-2-3"
+                  />
+                  <div id="i1u33-2-4">
+                    <b id="if4q2x">Rent A GPU</b><br id="i04bd9" />
+                  </div>
+                  <img
+                    src="https://files.peachworlds.com/website/fbfff170-b48d-45b1-9b99-170bcb947164/arrow-topright.svg"
+                    loading="lazy"
+                    id="ib70qp-2-3"
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="iosqkh-2-3-2-3-2-4-2" class="pwb-block pwb-flex-grid-wrap">
+              <img
+                src="https://files.peachworlds.com/website/3b506dda-41fb-4b7c-86b3-97f7dde78109/animation-1720080510463.gif"
+                loading="lazy"
+                id="i964g-3-2-4-2"
+              />
+            </div>
+          </div>
+          <div id="iy92-2-3-2-4-3-2" class="pwb-block pwb-flex-grid-wrap"></div>
+        </div>
+      </div>
+      <div id="irq9" class="pwb-flex-grid-wrap">
+        <div id="ilik" class="pwb-flex-grid-wrap">
+          <div id="ielp" class="pwb-flex-grid-wrap">
+            <div id="ievj" class="pwb-flex-grid-wrap">
+              <div id="i0r3" class="pwb-flex-grid-wrap">
+                <div id="it24j-2">AI IS THE FUTURE<br id="i2bui-2" /></div>
+                <div id="it24j">
+                  Empowering Companies to Achieve Excellence with Cutting-edge
+                  GPU Technologies and Scalable AI Processing.<br id="iakzoc" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ielp-2" class="pwb-flex-grid-wrap">
+            <div id="ievj-2" class="pwb-flex-grid-wrap">
+              <div
+                id="i2zhcj"
+                data-border="true"
+                data-framer-name="Stat"
+                class="framer-1iwxjzx"
+              >
+                <p id="ialu46" class="framer-text">Burnt</p>
+                <p id="iorbco" class="framer-text">
+                  LP<br id="iuio0w" />
+                </p>
+              </div>
+              <div
+                id="i2zhcj-2"
+                data-border="true"
+                data-framer-name="Stat"
+                class="framer-1iwxjzx"
+              >
+                <p id="ialu46-2" class="framer-text">Renounced</p>
+                <p id="iorbco-2" class="framer-text">
+                  Ownership
+                </p>
+              </div>
+              <div
+                id="i2zhcj-3"
+                data-border="true"
+                data-framer-name="Stat"
+                class="framer-1iwxjzx"
+              >
+                <p id="ialu46-3" class="framer-text">0/0</p>
+                <p id="iorbco-3" class="framer-text">
+                  Tax<br id="i5s741" />
+                </p>
+              </div>
+              <div
+                id="i2zhcj-4"
+                data-border="true"
+                data-framer-name="Stat"
+                class="framer-1iwxjzx"
+              >
+                <p id="ialu46-4" class="framer-text">1B</p>
+                <p id="iorbco-4" class="framer-text">
+                  Total Supply
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="ievj-3-3" class="pwb-flex-grid-wrap">
+            <div id="i0r3-2-4" class="pwb-flex-grid-wrap">
+              <div id="it24j-2-2-3">Token Utility<br id="i2bui-2-2-3" /></div>
+              <div id="it24j-3-3">
+                GPUX Token: Powering the Compute Economy<br id="iakzoc-2-2" />
+              </div>
+              <div id="it24j-3-2-2-2-3-2-3">
+                The <b id="iv8d4j-2">GPUX AI </b>Token is the cornerstone of our
+                decentralized compute platform:<br id="ilf9n7-2" /><br
+                  id="imuwzn-2"
+                />• Pay for Compute — Use tokens to run AI jobs, instantly and
+                transparently.<br id="ih668j-2" />• Stake for Access — Stake to
+                earn trust, access priority jobs, and unlock rewards.<br
+                  id="ivsaoz-2"
+                />• Govern the Protocol — Vote on upgrades, emissions, and
+                ecosystem funding.<br id="iy4s8n-2" />• Get Rewards &amp;
+                Discounts — Hold tokens for reduced fees, yield, and early
+                access.
+              </div>
+            </div>
+          </div>
+          <div id="ielp-3" class="pwb-flex-grid-wrap">
+            <div id="ievj-3" class="pwb-flex-grid-wrap">
+              <div id="i0r3-2" class="pwb-flex-grid-wrap">
+                <div id="it24j-2-2">Token Utility<br id="i2bui-2-2" /></div>
+                <div id="it24j-3">
+                  GPUX Token: Powering the Compute Economy<br id="iakzoc-2" />
+                </div>
+                <div id="it24j-3-2-2-2-3-2">
+                  The <b id="iv8d4j">GPUX AI </b>Token is the cornerstone of our
+                  decentralized compute platform:<br id="ilf9n7" /><br
+                    id="imuwzn"
+                  />• Pay for Compute — Use tokens to run AI jobs, instantly and
+                  transparently.<br id="ih668j" />• Stake for Access — Stake to
+                  earn trust, access priority jobs, and unlock rewards.<br
+                    id="ivsaoz"
+                  />• Govern the Protocol — Vote on upgrades, emissions, and
+                  ecosystem funding.<br id="iy4s8n" />• Get Rewards &amp;
+                  Discounts — Hold tokens for reduced fees, yield, and early
+                  access.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ielp-3-2" class="pwb-flex-grid-wrap">
+            <div id="ievj-3-2" class="pwb-flex-grid-wrap">
+              <div id="i0r3-2-3" class="pwb-flex-grid-wrap">
+                <div id="it24j-2-2-2">
+                  Tokenomics at a Glance<br id="i2bui-2-2-2" />
+                </div>
+                <div id="it24j-3-2-2-2-3-2-2">
+                  • <b id="inh4mr">Total Supply: </b>1,000,000,000 GPUX AI<br
+                    id="imazty"
+                  /><br id="ie4j4i" />• <b id="izqrhl">Distribution:</b> 40%
+                  rewards · 20% grants · 20% team/advisors · 20% public sale<br
+                    id="igs8ts"
+                  /><br id="iz31zs" />•<b id="ii4rqh">Emission Model: </b>5%
+                  annual inflation to fuel rewards and development
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ielp-2-2" class="pwb-flex-grid-wrap">
+            <div id="ievj-2-2" class="pwb-flex-grid-wrap">
+              <div id="i0r3-2-2" class="pwb-flex-grid-wrap">
+                <div
+                  id="iosqkh-2-3-2-2-2-3-2-2-2"
+                  class="pwb-block pwb-flex-grid-wrap"
+                >
+                  <div
+                    id="igxb-4-2-2-3-2-2-2-2-3-3-2-2-3-2-2-2"
+                    class="pwb-text"
+                  >
+                    GPUX AI
+                  </div>
+                </div>
+                <div id="it24j-3-2">OUR PROCESS</div>
+              </div>
+              <div id="iz46-2-2" class="pwb-flex-grid-wrap">
+                <div id="irwl-2-2" class="pwb-flex-grid-wrap">
+                  <div id="ist4h-2-2" class="pwb-flex-grid-wrap">
+                    <img
+                      src="https://files.peachworlds.com/website/4590c056-338f-4cab-b870-a7605e22a0a1/Frame-427321735.jpg"
+                      loading="lazy"
+                      id="ion1x-3"
+                    />
+                    <div id="i7nl-4-2-3" class="pwb-flex-grid-wrap">
+                      <div id="it24j-3-2-2-4">
+                        Global GPU Pooling<br id="ilx3k" />
+                      </div>
+                      <div id="it24j-3-2-2-2-3">
+                        Tap into idle GPUs from 100,000+ contributors: gamers,
+                        data centers, research labs.<br id="izpqs6" />
+                      </div>
+                    </div>
+                  </div>
+                  <div id="iiee4-2-2" class="pwb-flex-grid-wrap">
+                    <img
+                      src="https://files.peachworlds.com/website/32fa16b5-2d64-4b25-87be-8a9966e17d21/Frame-427321737.jpg"
+                      loading="lazy"
+                      id="ion1x-2-2"
+                    />
+                    <div id="i7nl-4-2-2-2" class="pwb-flex-grid-wrap">
+                      <div id="it24j-3-2-2-3-2">
+                        Federated Scheduling<br id="iiox4j" />
+                      </div>
+                      <div id="it24j-3-2-2-2-2-2">
+                        Smart engine matches your job to the best GPU based on
+                        location, speed, and load.<br id="ixypmk" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="irwl-2-3" class="pwb-flex-grid-wrap">
+                  <div id="ist4h-2-3" class="pwb-flex-grid-wrap">
+                    <img
+                      src="https://files.peachworlds.com/website/49b5585b-3966-4314-8059-e7d30da5b46b/Frame-427321732.jpg"
+                      loading="lazy"
+                      id="ion1x-4"
+                    />
+                    <div id="i7nl-4-2-4" class="pwb-flex-grid-wrap">
+                      <div id="it24j-3-2-2-5">
+                        Secure Execution<br id="i20kwy" />
+                      </div>
+                      <div id="it24j-3-2-2-2-4">
+                        Jobs run in encrypted environments with on-chain result
+                        validation.<br id="ifve9i" />
+                      </div>
+                    </div>
+                  </div>
+                  <div id="ist4h-2-5" class="pwb-flex-grid-wrap">
+                    <img
+                      src="https://files.peachworlds.com/website/76f1b49e-802e-4b7a-b0ed-d12f5cc1b987/Frame-427321729.jpg"
+                      loading="lazy"
+                      id="ion1x-6"
+                    />
+                    <div id="i7nl-4-2-6" class="pwb-flex-grid-wrap">
+                      <div id="it24j-3-2-2-7">Instant Rewards</div>
+                      <div id="it24j-3-2-2-2-6">
+                        Nodes get rewarded in real-time based on accuracy,
+                        speed, and uptime.<br id="itr72b" />
+                      </div>
+                    </div>
+                  </div>
+                  <div id="ist4h-2-6" class="pwb-flex-grid-wrap">
+                    <img
+                      src="https://files.peachworlds.com/website/aa6eddcd-52ce-4801-bdd2-a9241a30f4e8/Frame-427321733.jpg"
+                      loading="lazy"
+                      id="ion1x-7"
+                    />
+                    <div id="i7nl-4-2-7" class="pwb-flex-grid-wrap">
+                      <div id="it24j-3-2-2-8">Live Monitoring</div>
+                      <div id="it24j-3-2-2-2-7">
+                        Track performance, uptime, and output as it happens
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ielp-2-2-2-3" class="pwb-flex-grid-wrap">
+            <div id="ievj-2-2-2-3" class="pwb-flex-grid-wrap">
+              <div id="irwl-2-4-3" class="pwb-flex-grid-wrap">
+                <div id="ist4h-2-4-6" class="pwb-flex-grid-wrap">
+                  <div id="irwl-4-2-3" class="pwb-flex-grid-wrap">
+                    <img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-3-3"
+                    /><img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-5-2-3"
+                    /><img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-6-2-3"
+                    /><img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-7-2-3"
+                    /><img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-8-2-3"
+                    />
+                  </div>
+                  <div id="it24j-3-2-2-2-5-2-4">
+                    This GPU platform allowed us to scale AI models faster than
+                    ever before—huge performance gains!
+                  </div>
+                  <div id="irwl-3" class="pwb-flex-grid-wrap">
+                    <img
+                      src="https://files.peachworlds.com/website/113b4543-b38a-43aa-a377-99965c373df9/2.jpg"
+                      loading="lazy"
+                      id="ion1x-5-2-4"
+                    />
+                    <div id="i7nl-4-2-5-2" class="pwb-flex-grid-wrap">
+                      <div id="it24j-3-2-2-6-2">James Reid</div>
+                      <div id="it24j-3-2-2-2-5-2">AI Researcher</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="ist4h-2-4-6-2" class="pwb-flex-grid-wrap">
+                  <div id="irwl-4-2" class="pwb-flex-grid-wrap">
+                    <img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-3"
+                    /><img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-5-2"
+                    /><img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-6-2"
+                    /><img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-7-2"
+                    /><img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-8-2"
+                    />
+                  </div>
+                  <div id="it24j-3-2-2-2-5-2-4-2">
+                    Real-time GPU tracking is a game-changer for our deep
+                    learning applications.
+                  </div>
+                  <div id="irwl-3-2" class="pwb-flex-grid-wrap">
+                    <img
+                      src="https://files.peachworlds.com/website/72e507bb-c82d-4b36-9aa8-e8b540a1c659/1.jpg"
+                      loading="lazy"
+                      id="ion1x-5-2-4-2"
+                    />
+                    <div id="i7nl-4-2-5-2-3" class="pwb-flex-grid-wrap">
+                      <div id="it24j-3-2-2-6-2-3">Emma Augustin</div>
+                      <div id="it24j-3-2-2-2-5-2-3">
+                        ML Engineer<br id="i8istm" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="ist4h-2-4-6-3" class="pwb-flex-grid-wrap">
+                  <div id="irwl-4-2-2" class="pwb-flex-grid-wrap">
+                    <img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-3-2"
+                    /><img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-5-2-2"
+                    /><img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-6-2-2"
+                    /><img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-7-2-2"
+                    /><img
+                      src="https://files.peachworlds.com/website/875d0000-120b-4ccd-b4a3-5940d1c25a0c/hexagon.png"
+                      loading="lazy"
+                      id="ion1x-5-2-8-2-2"
+                    />
+                  </div>
+                  <div id="it24j-3-2-2-2-5-2-4-3">
+                    We’ve never had such easy access to high-performance
+                    computing. Highly recommend!
+                  </div>
+                  <div id="irwl-3-3" class="pwb-flex-grid-wrap">
+                    <img
+                      src="https://files.peachworlds.com/website/2268e033-632d-4d94-8616-fa22936665d5/4.jpg"
+                      loading="lazy"
+                      id="ion1x-5-2-4-3"
+                    />
+                    <div id="i7nl-4-2-5-2-4" class="pwb-flex-grid-wrap">
+                      <div id="it24j-3-2-2-6-2-4">Sophia Smith</div>
+                      <div id="it24j-3-2-2-2-5-2-5">Data Scientist</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ielp-2-2-2-2" class="pwb-flex-grid-wrap">
+            <div id="ievj-2-2-2-2" class="pwb-flex-grid-wrap">
+              <div id="iyyi3b-2" class="framer-hu7vsh">
+                <div
+                  id="ivqlb4-2"
+                  data-framer-name="Heading"
+                  data-framer-component-type="RichTextContainer"
+                  class="framer-c0kpcg"
+                >
+                  <div
+                    id="iosqkh-2-3-2-2-2-3-2-2-2-6"
+                    class="pwb-block pwb-flex-grid-wrap"
+                  >
+                    <div
+                      id="igxb-4-2-2-3-2-2-2-2-3-3-2-2-3-2-2-2-6"
+                      class="pwb-text"
+                    >
+                      ABOUT
+                    </div>
+                  </div>
+                  <div id="it24j-3-2-3-2-3-2-3">Meet the Team</div>
+                </div>
+                <div
+                  id="in3wm5-2"
+                  data-framer-name="Supportive Text"
+                  data-framer-component-type="RichTextContainer"
+                  class="framer-rxomfp"
+                >
+                  <p id="i3vfjb-2-2" class="framer-text">
+                    The minds behind our GPU network are AI researchers, deep
+                    learning experts, and infrastructure engineers committed to
+                    revolutionizing AI compute.
+                  </p>
+                </div>
+              </div>
+              <div id="i69vol-2" class="pwb-flex-grid-wrap">
+                <div
+                  id="io5992-4"
+                  data-border="true"
+                  data-framer-name="Desktop&Tablet"
+                  class="framer-yYaPk framer-j66y4c framer-v-j66y4c"
+                >
+                  <div
+                    id="iaj9xt-4"
+                    data-framer-name="Pic"
+                    class="framer-l4xo3q"
+                  >
+                    <img
+                      src="https://files.staging.peachworlds.com/website/ff2d4500-da65-467f-a817-f42a67700ab6/3bed41ea8eeaab4fbdc572d2a0ba9cb6.png"
+                      loading="lazy"
+                      id="io79rw-2"
+                      alt=""
+                      sizes="calc(max((min(100vw - 80px, 1200px) - 40px) / 3, 8px) - 80px)"
+                      srcset="
+                        https://framerusercontent.com/images/xIVqdAx9q8SCmQniFPD5NuAaalA.png?scale-down-to=512 512w,
+                        https://framerusercontent.com/images/xIVqdAx9q8SCmQniFPD5NuAaalA.png                   874w
+                      "
+                      decoding="async"
+                    /><img
+                      src="https://files.peachworlds.com/website/9896296b-a794-4f61-9360-afc92046776b/untitled-1.png"
+                      loading="lazy"
+                      id="ipf6ir"
+                    /><img
+                      src="https://files.peachworlds.com/website/30fde46e-9def-4474-9e3e-96d152e2af81/1.png"
+                      loading="lazy"
+                      id="izqu98"
+                    />
+                  </div>
+                  <div id="i0jjdc-4" class="framer-uf4x0y">
+                    <div
+                      id="itehe9-4"
+                      data-framer-component-type="RichTextContainer"
+                      class="framer-hzxoi3"
+                    >
+                      <h5 id="i8mgp3-4" class="framer-text">Adam Lewis</h5>
+                    </div>
+                    <div
+                      id="iihea3-4"
+                      data-framer-component-type="RichTextContainer"
+                      class="framer-fetv22"
+                    >
+                      <p id="iscbhn-4" class="framer-text">Founder &amp; CEO</p>
+                      <p id="iscbhn-4-4" class="framer-text">
+                        •Over 8 years of experience in AI, GPU architecture and
+                        software systems.<br id="ivow08" />• Led multiple AI
+                        infrastructure projects.<br id="ii3zti" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="io5992-4-2"
+                  data-border="true"
+                  data-framer-name="Desktop&Tablet"
+                  class="framer-yYaPk framer-j66y4c framer-v-j66y4c"
+                >
+                  <div
+                    id="iaj9xt-4-2"
+                    data-framer-name="Pic"
+                    class="framer-l4xo3q"
+                  >
+                    <img
+                      src="https://pwb-uploads-staging.s3.amazonaws.com/website/a82e122c-2afa-41d9-a0a6-72da6d955540/thumbnail.png"
+                      loading="lazy"
+                      id="ikw559-2"
+                    /><img
+                      src="https://files.peachworlds.com/website/89948584-54e5-42be-a65a-3380ec08fa87/3.png"
+                      loading="lazy"
+                      id="ikb4fq"
+                    /><img
+                      src="https://files.peachworlds.com/website/61208813-5d15-4b56-9d89-da585ad996b3/untitled-2.png"
+                      loading="lazy"
+                      id="i2dcjc"
+                    />
+                  </div>
+                  <div id="i0jjdc-4-2" class="framer-uf4x0y">
+                    <div
+                      id="itehe9-4-2"
+                      data-framer-component-type="RichTextContainer"
+                      class="framer-hzxoi3"
+                    >
+                      <h5 id="i8mgp3-4-2" class="framer-text">
+                        Alyssa Monroe<br id="i2n9sk" />
+                      </h5>
+                    </div>
+                    <div
+                      id="iihea3-4-2"
+                      data-framer-component-type="RichTextContainer"
+                      class="framer-fetv22"
+                    >
+                      <p id="iscbhn-4-2" class="framer-text">
+                        Chief Data Officer (CDO)
+                      </p>
+                      <p id="iscbhn-4-2-2" class="framer-text">
+                        • Expert in deep learning and data strategy, previously
+                        at OpenAI.<br id="i228wi" />• Oversees all data
+                        pipelines and model optimization.<br id="i01ilk" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="io5992-4-3"
+                  data-border="true"
+                  data-framer-name="Desktop&Tablet"
+                  class="framer-yYaPk framer-j66y4c framer-v-j66y4c"
+                >
+                  <div
+                    id="iaj9xt-4-3"
+                    data-framer-name="Pic"
+                    class="framer-l4xo3q"
+                  >
+                    <img
+                      src="https://files.peachworlds.com/website/81e7145d-3241-4fdc-aec2-32ba7c45832a/2.png"
+                      loading="lazy"
+                      id="iblbuf"
+                    /><img
+                      src="https://files.peachworlds.com/website/c1960033-7c5a-4cd7-b02d-172a2a9657aa/untitled-3.png"
+                      loading="lazy"
+                      id="ia0aj3"
+                    /><img
+                      src="https://pwb-uploads-staging.s3.amazonaws.com/website/69bc5820-bf9a-4b2e-bd2d-b525398350b8/Memoji.png"
+                      loading="lazy"
+                      id="ikw559"
+                    />
+                  </div>
+                  <div id="i0jjdc-4-3" class="framer-uf4x0y">
+                    <div
+                      id="itehe9-4-3"
+                      data-framer-component-type="RichTextContainer"
+                      class="framer-hzxoi3"
+                    >
+                      <h5 id="i8mgp3-4-3" class="framer-text">
+                        Md. Sohel Bepari
+                      </h5>
+                    </div>
+                    <div
+                      id="iihea3-4-3"
+                      data-framer-component-type="RichTextContainer"
+                      class="framer-fetv22"
+                    >
+                      <p id="iscbhn-4-3" class="framer-text">CTO</p>
+                      <p id="iscbhn-4-3-2" class="framer-text">
+                        • 8+ years of development experience.<br id="iznoky" />•
+                        Head of platform security and decentralized scheduling.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ielp-2-2-2-2-2-2" class="pwb-flex-grid-wrap">
+            <div id="ievj-2-2-2-2-2-3" class="pwb-flex-grid-wrap">
+              <div id="i0r3-2-2-2-2-2-2" class="pwb-flex-grid-wrap">
+                <div id="iz46-2-2-2-2-2-2" class="pwb-flex-grid-wrap">
+                  <img
+                    src="https://files.peachworlds.com/website/7ff97352-19c7-4696-a411-3f718e785234/Group-9.svg"
+                    loading="lazy"
+                    id="ion1x-5-2-2-2-2"
+                  />
+                </div>
+                <div id="it24j-3-2-3-2-3-2">
+                  JOIN THE FUTURE OF DECENTRALIZED COMPUTE
+                </div>
+                <div
+                  id="iosqkh-2-3-2-3-2-2"
+                  class="pwb-block pwb-flex-grid-wrap"
+                >
+                  <img
+                    src="https://files.peachworlds.com/website/25b3c62a-1c5e-4928-b069-c098b4762de0/Union.svg"
+                    loading="lazy"
+                    id="i964g-3-2-2"
+                  />
+                  <div id="igxb-4-2-2-3-2-2-2-2-3-3-3-2-2" class="pwb-text">
+                    WHITE PAPER
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="i0ruk" class="pwb-flex-grid-wrap">
+          <div id="ia2xj" class="pwb-flex-grid-wrap">
+            <div id="ir745n" class="pwb-flex-grid-wrap">
+              <div id="ib9q-2-2-2" class="pwb-block pwb-flex-grid-wrap">
+                <div id="i9x7-2-2-2-2-2-2" class="pwb-block pwb-flex-grid-wrap">
+                  <div
+                    id="iosqkh-2-3-2-3-2-3"
+                    class="pwb-block pwb-flex-grid-wrap"
+                  >
+                    <img
+                      src="https://files.peachworlds.com/website/25b3c62a-1c5e-4928-b069-c098b4762de0/Union.svg"
+                      loading="lazy"
+                      id="i964g-3-2-3"
+                    />
+                    <div id="igxb-4-2-2-3-2-2-2-2-3-3-3-2-3" class="pwb-text">
+                      ACCELERATE TODAY
+                    </div>
+                  </div>
+                  <div
+                    id="iosqkh-2-2-2-2-2-2-2"
+                    class="pwb-block pwb-flex-grid-wrap"
+                  >
+                    <div
+                      id="i0op89-3-2-2-2-2-2-2-3-2-2"
+                      class="pwb-block pwb-flex-grid-wrap"
+                    >
+                      <div id="igxb-4-2-2-3-2-2-2-2-3-4-2-2" class="pwb-text">
+                        GET IN TOUCH
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="i0op89-3-2-2-2-2-2-2-2-2-2-2"
+                  class="pwb-block pwb-flex-grid-wrap"
+                >
+                  <div id="ibty0f-2-2-2" class="pwb-flex-grid-wrap">
+                    <img
+                      src="https://files.peachworlds.com/website/aea64b57-b50b-4fe6-b995-b22f10d0df84/button.svg"
+                      loading="lazy"
+                      id="i2nth-2-2-2"
+                    />
+                    <div id="i1u33-2-2-2">
+                      <b id="iqfdyg">App</b>
+                    </div>
+                    <img
+                      src="https://files.peachworlds.com/website/fbfff170-b48d-45b1-9b99-170bcb947164/arrow-topright.svg"
+                      loading="lazy"
+                      id="ib70qp-2-2-2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div id="isp4aj" class="pwb-flex-grid-wrap">
+                <div id="ivottt-2-2" class="pwb-flex-grid-wrap">
+                  <img
+                    src="https://files.peachworlds.com/website/3902a9bf-06dd-487b-a1a5-a751325ad56c/Group-1.svg"
+                    loading="lazy"
+                    id="ion1x-5-2-8-2-3-2-2-2-2"
+                  /><img
+                    src="https://files.peachworlds.com/website/7403c0d2-f73f-4a81-92de-34056561050a/Group-2.svg"
+                    loading="lazy"
+                    id="ion1x-5-2-8-2-3-2-2-2-2-2"
+                  /><img
+                    src="https://files.peachworlds.com/website/9f905811-ad3f-4b8c-8f63-b283cf7990da/telegram.png"
+                    loading="lazy"
+                    id="ig1sdj"
+                  /><img
+                    src="https://files.peachworlds.com/website/f9fc7195-7481-4a0b-b5dc-a2e3fbf75172/email.png"
+                    loading="lazy"
+                    id="i1wdeg"
+                  /><img
+                    src="/dextools.png"
+                    loading="lazy"
+                    id="i3cnxi"
+                  /><img
+                    src="https://files.peachworlds.com/website/67a2cb0b-6e4d-46d7-8688-f89e4ccd9b91/Group.svg"
+                    loading="lazy"
+                    id="ion1x-5-2-8-2-3-2-2-2"
+                  />
+                </div>
+                <div id="ivottt-2" class="pwb-flex-grid-wrap">
+                  <div id="it24j-3-2-2-2-5-2-4-5-2-2">hello@pulse-ai.me</div>
+                </div>
+              </div>
+              <div id="i9f2p6" class="pwb-flex-grid-wrap"></div>
+            </div>
+          </div>
+        </div>
+        <br id="iqqdi" />
+      </div>
+      <img
+        src="https://files.peachworlds.com/static/image-placeholder.png"
+        loading="lazy"
+        id="idztx6"
+      /><img
+        src="https://files.peachworlds.com/static/image-placeholder.png"
+        loading="lazy"
+        id="ipzjuf"
+      />
+    </div>
+    <div id="pwb-loading-wrap">
+      <body id="pwb-loading-wrap">
+        <div id="i52xq5-2" class="pwb-flex-grid-wrap">
+          <img
+            src="https://files.peachworlds.com/website/7869553f-b284-4aef-8beb-a6b13d81de7e/bg.gif"
+            loading="lazy"
+            id="ixxi9v"
+          />
+        </div>
+        <div id="i52xq5" class="pwb-flex-grid-wrap">
+          <div
+            id="i84s4f"
+            size="40"
+            progressColor="#ff952b"
+            progressWidth="3"
+            backgroundColor="#ff952b33"
+            backgroundWidth="1"
+            class="pwb-loading-bar"
+          >
+            <svg
+              id="i54mqs"
+              width="86"
+              xmlns="http://www.w3.org/2000/svg"
+              height="86"
+              version="1.1"
+              viewPort="0 0 86 86"
+            >
+              <circle
+                r="40"
+                cx="43"
+                cy="43"
+                id="i4snq4"
+                fill="transparent"
+                stroke="#ff952b33"
+                stroke-width="1"
+                stroke-dasharray="251.32741228718345"
+                stroke-dashoffset="0"
+              ></circle>
+              <circle
+                r="40"
+                cx="43"
+                cy="43"
+                id="iafv17"
+                fill="transparent"
+                stroke="#ff952b"
+                stroke-width="3"
+                stroke-dasharray="251.32741228718345"
+                stroke-dashoffset="251.32741228718345"
+                class="pwb-loading-bar-circle"
+              ></circle>
+            </svg>
+            <div id="izmlqn" class="pwb-loading-bar-text">0%</div>
+          </div>
+        </div>
+        <div id="i52xq5-3" class="pwb-flex-grid-wrap">
+          <div
+            id="i84s4f-2"
+            size="40"
+            progressColor="#ff952b"
+            progressWidth="3"
+            backgroundColor="#ff952b33"
+            backgroundWidth="1"
+            class="pwb-loading-bar"
+          >
+            <svg
+              id="i54mqs-2"
+              width="86"
+              xmlns="http://www.w3.org/2000/svg"
+              height="86"
+              version="1.1"
+              viewPort="0 0 86 86"
+            >
+              <circle
+                r="40"
+                cx="43"
+                cy="43"
+                id="i4snq4-2"
+                fill="transparent"
+                stroke="#ff952b33"
+                stroke-width="1"
+                stroke-dasharray="251.32741228718345"
+                stroke-dashoffset="0"
+              ></circle>
+              <circle
+                r="40"
+                cx="43"
+                cy="43"
+                id="iafv17-2"
+                fill="transparent"
+                stroke="#ff952b"
+                stroke-width="3"
+                stroke-dasharray="251.32741228718345"
+                stroke-dashoffset="251.32741228718345"
+                class="pwb-loading-bar-circle"
+              ></circle>
+            </svg>
+            <div id="izmlqn-2" class="pwb-loading-bar-text">0%</div>
+          </div>
+          <img
+            src="https://pwb-uploads-production.s3.amazonaws.com/static/built_with_peach_worlds_light.png"
+            loading="lazy"
+            id="pwb-loading-page-logo"
+          />
+        </div>
+      </body>
+    </div>
+
+    <!-- Waterfall optimization -->
+    <script type="text/javascript">
+      window._pwPreviewResourceUrls = [];
+      (function waterfallOptimizationScript() {
+        window._pwPreviewResourceUrls = window._pwPreviewResourceUrls || [];
+        if (!window._pwLoadFileRequestsCache)
+          window._pwLoadFileRequestsCache = new Map();
+        if (!window._pwLoadFileResolveFnCache)
+          window._pwLoadFileResolveFnCache = new Map();
+        window._pwSetFileCache = (fileUrl, blob) => {
+          if (!window._pwLoadFileResolveFnCache)
+            throw new Error(
+              `Variable "_pwLoadFileResolveFnCache" is undefined.`
+            );
+          const blobUrl = (window.URL || window.webkitURL).createObjectURL(
+            blob
+          );
+          const resolveFn = window._pwLoadFileResolveFnCache.get(fileUrl);
+          if (!resolveFn)
+            throw new Error(
+              `Resolve function for file "${fileUrl}" not found.`
+            );
+          resolveFn(blobUrl);
+        };
+        window._pwWaitForExplicitFileResolve = (fileUrl) => {
+          if (!window._pwLoadFileResolveFnCache)
+            throw new Error(
+              `Variable "_pwLoadFileResolveFnCache" is undefined.`
+            );
+          if (!window._pwLoadFileRequestsCache)
+            throw new Error(
+              `Variable "_pwLoadFileRequestsCache" is undefined.`
+            );
+          if (
+            window._pwLoadFileResolveFnCache.has(fileUrl) &&
+            window._pwLoadFileRequestsCache.has(fileUrl)
+          )
+            return;
+          let resolveFn = void 0;
+          const explicitWaitPromise = new Promise((resolve) => {
+            resolveFn = resolve;
+          });
+          window._pwLoadFileResolveFnCache.set(fileUrl, resolveFn);
+          window._pwLoadFileRequestsCache.set(fileUrl, explicitWaitPromise);
+        };
+        window._pwLoadFileFromCacheHelper = async (fileUrl) => {
+          if (!fileUrl) return void 0;
+          try {
+            const response = await fetch(fileUrl);
+            if (!response.ok) return void 0;
+            const blob = await response.blob();
+            const blobUrl = (window.URL || window.webkitURL).createObjectURL(
+              blob
+            );
+            return blobUrl;
+          } catch (error) {
+            return void 0;
+          }
+        };
+        window._pwLoadFileFromCache = async (fileUrl) => {
+          if (!fileUrl) return void 0;
+          if (!window._pwLoadFileRequestsCache)
+            throw new Error(
+              `Variable "_pwLoadFileRequestsCache" is undefined.`
+            );
+          let requestPromise = window._pwLoadFileRequestsCache.get(fileUrl);
+          if (!requestPromise) {
+            if (!window._pwLoadFileFromCacheHelper)
+              throw new Error(
+                `Function "_pwLoadFileFromCacheHelper" is undefined.`
+              );
+            requestPromise = window._pwLoadFileFromCacheHelper(fileUrl);
+            window._pwLoadFileRequestsCache.set(fileUrl, requestPromise);
+          }
+          return await requestPromise;
+        };
+        for (const explicitResourceUrl of window._pwPreviewResourceUrls)
+          window._pwWaitForExplicitFileResolve(explicitResourceUrl);
+      })();
+    </script>
+
+    <script type="text/javascript">
+      window._pwExecLoadingPageJavascript = () => {
+        var items = document.querySelectorAll("#i84s4f, #i84s4f-2");
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function () {
+            const _this = this;
+            if (!_this || _this.dataset.gjsType) return;
+            const loadingDuration = 6e3;
+            const loadingStopAtTime = 4500;
+            if (!window._pwLoadingProgressEasing) {
+              window._pwLoadingProgressEasing = (x) => {
+                return x < 0.5
+                  ? 4 * x * x * x
+                  : 1 - Math.pow(-2 * x + 2, 3) / 2;
+              };
+            }
+            if (!window._pwSetLoadingProgress) {
+              window._pwSetLoadingProgress = (
+                timeMilliseconds,
+                progressText,
+                circle
+              ) => {
+                const progress = Math.round(
+                  window._pwLoadingProgressEasing(
+                    (timeMilliseconds + 50) / loadingDuration
+                  ) * 100
+                );
+                if (progressText) {
+                  progressText.dataset.time = `${timeMilliseconds}`;
+                  progressText.textContent = `${progress}%`;
+                }
+                if (!circle) return;
+                const radius = circle
+                  ? parseInt(circle.getAttribute("r") || "0")
+                  : 40;
+                const c = Math.PI * (radius * 2);
+                const circleProgress = ((100 - progress) / 100) * c;
+                circle.style.strokeDashoffset = `${circleProgress}`;
+              };
+            }
+            const timeId = setInterval(() => {
+              const progressText = Array.from(_this.children).find((el) =>
+                el.classList.contains("pwb-loading-bar-text")
+              );
+              const circle = _this.querySelector(`.pwb-loading-bar-circle`);
+              const currentProgress = parseInt(
+                progressText.dataset.time || "0"
+              );
+              window._pwSetLoadingProgress(
+                currentProgress + 50,
+                progressText,
+                circle
+              );
+              if (currentProgress >= loadingStopAtTime) {
+                clearInterval(timeId);
+              }
+            }, 50);
+          }.bind(items[i])());
+        }
+      };
+      window._pwExecLoadingPageJavascript();
+    </script>
+  </body>
+</html>
