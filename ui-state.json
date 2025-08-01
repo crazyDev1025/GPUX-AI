@@ -89,7 +89,7 @@
       "newTab": true
     },
     "ibty0f-2": {
-      "url": "https://app.gpuxai.pro",
+      "url": "https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x3a018520bc9689bbcdb903580424fdf30c37b0da",
       "type": "external",
       "newTab": true
     },
@@ -102,7 +102,7 @@
       "sectionHash": "services"
     },
     "i1u33-2-4": {
-      "url": "https://app.GPUX AI.cloud/",
+      "url": "https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x3a018520bc9689bbcdb903580424fdf30c37b0da",
       "type": "external",
       "newTab": true
     },
@@ -112,12 +112,12 @@
       "newTab": true
     },
     "ibty0f-2-3": {
-      "url": "https://app.gpuxai.pro",
+      "url": "https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x3a018520bc9689bbcdb903580424fdf30c37b0da",
       "type": "external",
       "newTab": true
     },
     "i1u33-2-2-2": {
-      "url": "https://app.GPUX AI.cloud/",
+      "url": "https://app.gpuxai.pro",
       "type": "external",
       "newTab": true
     },
